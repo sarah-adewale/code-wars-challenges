@@ -35,6 +35,20 @@ function solve(s){
   return lowerNum >= upperNum ? s.toLowerCase() : s.toUpperCase();
 }
 
+function solve(s){
+    let lowerC = 0;
+    let upperC = 0;
+    for( let i = 0;i<s.length;i++){
+      if( s[i] == s[i].toUpperCase()){
+        upperC++;
+      }
+      else{
+        lowerC++;
+      }
+    }
+    return lowerC >= upperC ? s.toLowerCase() : s.toUpperCase()
+}
+
 console.log(solve('coDe'))
 console.log(solve('CODe'))
 console.log(solve('coDE'))
