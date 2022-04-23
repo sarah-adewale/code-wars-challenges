@@ -24,9 +24,12 @@ function correct(string){
     }
    }
    return splitString.join('')
-
-
 }
+
+function correct(string) {
+  return [...string].map(a => ({'0':'O','5':'S','1':'I'})[a]||a).join('')
+}
+
 console.log(correct("L0ND0N"))
 console.log(correct("DUBL1N"))
 console.log(correct("51NGAP0RE"))
