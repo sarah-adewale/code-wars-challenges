@@ -24,7 +24,7 @@ function rockPaperScissorsLizardSpock(){
   }else{
     console.log('spock')
   }
-}
+} 
 
 rockPaperScissorsLizardSpock()
 
