@@ -20,7 +20,7 @@ function comp(array1, array2){
         return eachArr2
     });
 
-  return Math.pow(eachArr, 2) === eachArr2 ? true : false
+//   return Math.pow(eachArr, 2) === eachArr2 ? true : false
 
 }
 
