@@ -25,6 +25,6 @@ var number = function(busStops){
     totalPeople += busStops[i][0]
     totalPeople -= busStops[i][1]
   }
-  return totalPeople;
+  return totalPeople; 
 }
 
