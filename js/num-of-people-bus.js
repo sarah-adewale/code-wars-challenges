@@ -28,9 +28,30 @@ var number = function(busStops){
   return totalPeople; 
 }
 
+// refactor with comments
 
+// p: list?, array? number ? the first item is the number of people entering the bus
+// the second is the number of people that gets off the bus 
+// r: return the number of people still in the bus
+// e: number([[3, 0], [4, 5], [3, 2]]), 3) 
+    //number([[5, 0], [2, 7], [3, 12]])
+    //number([[8, 0], [4, 5], [3, 2]])
+// p the number of people still in the bus is the sum of all the arrays at index 0 arr[0] 
+// minus the sum of all the arrays at index 1 arr[1]
 
-// p: list?, array? number ? the first item is the number of people 
-// r: 
-// e
-// p
+// create a function and assign it a parameter
+function number(busStops){
+    //create a variable to hold the result
+    let totalPeople = 0
+// create a loop for the sum of the arrays 
+for(let i = 0; i < busStops.length; i++){
+    // add the sum at index 0 to the value of totalPeople
+    totalPeople += busStops[i][0]
+     // then substract the sum at index 1 from the value of totalPeople
+    totalPeople -= busStops[i][1]
+}
+}
+
+number([[3, 0], [4, 5], [3, 2]], 3)
+number([[5, 0], [2, 7], [3, 1]], 2)
+number([[8, 0], [4, 5], [3, 2]], 8)
