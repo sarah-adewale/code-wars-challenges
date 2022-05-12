@@ -28,3 +28,9 @@ var number = function(busStops){
   return totalPeople; 
 }
 
+
+
+// p: list?, array? number ? the first item is the number of people 
+// r: 
+// e
+// p
