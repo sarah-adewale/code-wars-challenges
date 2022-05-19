@@ -12,3 +12,15 @@ function nthEven(n){
   // your code here
   return (n*2) -2
 }
+
+// or
+function nthEven(n){
+    return n*1 -2
+    
+}
+
+// or
+
+function nthEven(n){
+    return --n * 2
+}
