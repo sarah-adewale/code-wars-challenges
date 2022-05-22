@@ -5,9 +5,9 @@
 
 function sumMix(x){
 
- let newArray = x.toString().split(' ').parseInt(join(), 2)
- let anotherArr = newArray.reduce((acc, c) => acc + c, 0)
- return anotherArr
+ let newArray = x.reduce((acc, c) => +acc + +c, 0)
+//  let anotherArr = newArray
+ return newArray
 }
 
 console.log(sumMix([9, 3, '7', '3']))
