@@ -7,7 +7,7 @@
 // [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]  =>  [1, 8, 3, 6, 5, 4, 7, 2, 9, 0]
 
 function sortArray(array) {
-    // first filter the even number
+    // first filter the odd number 
 let filteredEven = array.filter(item => item % 2 !== 0).sort((a,z) => a - z)
 let newArry = array.map(item => item % 2 !== 0 ? filteredEven.shift() : item)
 return newArry
