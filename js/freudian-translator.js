@@ -14,20 +14,9 @@
 //should return an empty string.
 
 function toFreud(string) {
-    splitString = string.split('').join('sex')
-    return splitString
-    // for(let i = 0; i < splitString.length; i++){
-    //     if(splitString[i] === ''){
-    //         return ''
-    //     }else{
-    //         return splitString.splice(splitString[i], 'sex')
-    //     }
-    // }
-    // if(splitString === ''){
-    //     return ''
-    // }else{
-    //     return 'sex'
-    // }
+    splitString = string.split(' ')
+    return splitString.map((item) => 'sex').join(' ')
+     
 
 }
 
