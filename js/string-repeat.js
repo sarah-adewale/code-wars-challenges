@@ -14,3 +14,9 @@ function repeatStr (n, s) {
 
 console.log(repeatStr(3, "*"))
 console.log(repeatStr(5, "#"))
+
+// or
+
+function repeatStr (n, s) {
+  return s.repeat(n);
+}
