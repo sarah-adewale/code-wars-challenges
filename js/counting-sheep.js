@@ -14,11 +14,30 @@
 // Hint: Don't forget to check for bad values like null/undefined
 
 function countSheeps(arrayOfSheep) {
-    arrayOfSheep.filter((item) => {
-       item === true ? true.length : null
-    })
- 
+  let num = 0
+  for(let i = 0; i < arrayOfSheep.length; i++){
+    if(arrayOfSheep[i] == true){
+        num++
+    } 
+  }
+  return num
 }
+
+// or
+
+function countSheeps(arrayOfSheeps) {
+  return arrayOfSheeps.filter(Boolean).length;
+}
+
+// function countSheeps(arrayOfSheeps) 
+// {
+//     var num=0;
+//     for(var i=0; i<arrayOfSheeps.length; i++)
+//     {  
+//       if(arrayOfSheeps[i]==true){ num++; }
+//     }
+//     return num;
+// }
 
 console.log(countSheeps([
 true,  true,  true,  false,
