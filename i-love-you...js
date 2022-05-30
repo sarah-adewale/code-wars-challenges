@@ -13,7 +13,9 @@
 // where nb_petals > 0.
 
 function howMuchILoveYou(nbPetals) {
-  
+  if(nbPetals > ){
+
+  }
 }
 
 console.log(howMuchILoveYou(7)) // 'i love you'
