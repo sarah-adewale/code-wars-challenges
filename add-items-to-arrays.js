@@ -7,4 +7,12 @@
 
 var websites = [];
 websites.push('codewars')
-console.log (websites)
+console.log (websites, 'codewars')
+
+function arr(){
+  var websites = [];
+  websites.push('codewars')
+  return websites 
+}
+
+console.log(arr())
