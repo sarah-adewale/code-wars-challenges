@@ -17,3 +17,6 @@
 function bigToSmall(arr){
   return [].concat(...arr).sort((a,z) => z - a).join('>')
 }
+//or
+
+const bigToSmall = $ => $.reduce((acc, e) => acc.concat(e)).sort((a, b) => b - a).join('>')
