@@ -15,3 +15,6 @@ function evenNumbers(array, number) {
   }
   return result.splice(result.length-number, number)
 }
+
+// OR
+const evenNumbers = (array, number) => array.filter(item => item % 2 === 0).slice(-number);
