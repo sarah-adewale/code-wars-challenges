@@ -15,19 +15,11 @@
 
 
 function gimme(triplet){
-    // for(let i = 0; i < triplet.length; i++){
-    //     if(triplet[i] % 2 === 0){
-    //        return triplet.indexOf(triplet[i])
-    //     }
-       
-    // }
      // Clone the input array.
   let clonedArray = triplet.slice(0);
   // Sort it in ascending order.
   clonedArray.sort((a, z)=> (a-z))
- 
-  return triplet.indexOf(clonedArray[1]);
-    
+  return triplet.indexOf(clonedArray[1]);  
     
 }
 
