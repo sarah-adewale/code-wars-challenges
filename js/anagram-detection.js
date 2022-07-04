@@ -15,7 +15,7 @@ var isAnagram = function(test, original) {
     let len1 = test.length
     let len2 = original.length
     if(len1 !== len2){
-        return 'invalid input'
+        return false
     }
 
     
