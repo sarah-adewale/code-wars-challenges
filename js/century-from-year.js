@@ -11,13 +11,24 @@
 // 2000 --> 20
 
 
-function century(year) {
-  // Finish this :)
-  let century = 100
-  return Math.ceil(year/century)
+// function century(year) {
+//   // Finish this :)
+//   let century = 100
+//   return Math.ceil(year/century)
+// }
+
+// console.log(century(1705))
+// console.log(century(1900))
+// console.log(century(1601))
+// console.log(century(2000))
+
+function firstNonConsecutive(arr) {
+for (let i = 0; i < arr.length - 1; ++i) {
+if (arr[i] + 1 !== arr[i + 1]) {
+return arr[i + 1]
+}
+}
+return null
 }
 
-console.log(century(1705))
-console.log(century(1900))
-console.log(century(1601))
-console.log(century(2000))
+console.log(firstNonConsecutive([1,2,3,4,6,7,8]))

@@ -6,7 +6,7 @@ function removeExclamationMarks(s) {
 }
 
 function removeExclamationMarks(s) {
-  return s.split('!').join('');
+  return s.split('!').join(''); //split(!) removes exclamation mark
 }
 
 console.log(removeExclamationMarks('hello world!'))
