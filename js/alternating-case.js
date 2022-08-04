@@ -46,6 +46,12 @@ String.prototype.toAlternatingCase = function () {
   return str
 }
 
+//or
+
+String.prototype.toAlternatingCase = function () {
+    return this.split("").map(a => a === a.toUpperCase()? a.toLowerCase(): a.toUpperCase()).join('')
+}
+
 console.log(toAlternatingCase('hello world')) // 'HELLO WORLD'
 console.log(toAlternatingCase('HELLO WORLD')) // 'hello world'
 console.log(toAlternatingCase('HeLLo WoRLD')) // 'hEllO wOrld'
