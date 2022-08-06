@@ -6,6 +6,12 @@ function distinct(a) {
   return a.filter((item, index, arr) => arr.indexOf(item) === index)
 }
 
+
+function distinct(a) {
+  return Array.from(new Set(a));
+}
+
+
 console.log(distinct([1,2])) // [1,2]
 console.log(distinct([1,2,2])) // [1,2]
 console.log(distinct([1])) // [1]
