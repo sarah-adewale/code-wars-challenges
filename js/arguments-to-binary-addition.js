@@ -34,7 +34,7 @@ function arr2bin(arr){
     return arr.reduce((acc, c)=>acc+(typeof c=="number"?c:0),0).toString(2);
   
   // show me the code
-  // toString(b)
+  // toString(2)
 }
 
 console.log(arr2bin([1,2,'a'])) //"11"
