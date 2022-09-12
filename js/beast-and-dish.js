@@ -10,6 +10,8 @@
 
 //  P: 
 // a function that takes in two parameters beast and dish
+
+
 function feast(beast, dish){
   // a conditonal that checks if beast[0] and dish[0] is equal to beast[beast.length - 1] === dish[dish.length - 1]
   if( (beast[0] === dish[0]) && (beast[beast.length - 1] === dish[dish.length - 1]) ){

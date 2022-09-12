@@ -8,6 +8,7 @@
 
 // Note: Input will either be a positive integer (or a string for untyped languages).
 
+
 function apple(x){
 if(Math.pow(x, 2) > 1000){
   return 'It\'s hotter than the sun!!'

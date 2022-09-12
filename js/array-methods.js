@@ -57,5 +57,5 @@ console.log(total) //returns the sum of the prices
 // includes method
 const newItems = [1,2,3,4,5]
 
-const includesTwo = items.includes(2) //returns true
+const includesTwo = newItems.includes(2) //returns true
 console.log(includesTwo)

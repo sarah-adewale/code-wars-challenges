@@ -17,7 +17,7 @@
 
 function removeSmallest(numbers) {
  // return numbers.indexOf(Math.min(...numbers)) //returns the index of the smallest value in the array
-let copy = numbers.slice(0)
+let copy = numbers.slice(0) //copies without mutating the array
 let smallestIndexVal = numbers.indexOf(Math.min(...numbers))
  copy.splice(smallestIndexVal, 1)
  return copy
