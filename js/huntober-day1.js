@@ -43,34 +43,37 @@ function string(n){
     //create a loop with a conditional to check for the present of the value in the string. use string method .includes() 
     // to check if the value exists in the string
      n = n.split('')
-   return n.map((item) => {
-    if(item.includes(0)){
-        return 'O'
-    }else if(item.includes(1)){
-        return 'I'
-    }else if(item.includes(2)){
-        return 'Z'
-    }else if(item.includes(3)){
-        return 'E'
-    }else if(item.includes(4)){
-        return 'h'
-    }else if(item.includes(5)){
-        return 'S'
-    }else if(item.includes(6)){
-        return 'G'
-    }else if(item.includes(7)){
-        return 'L'
-    }else if(item.includes(8)){
-        return 'B'
-    }else if(item.includes(9)){
-        return 'q'
-    }else{
-        return item
-    }
-   }).join('')
+//    return n.map((item) => {
+//     if(item.includes(0)){
+//         return 'O'
+//     }else if(item.includes(1)){
+//         return 'I'
+//     }else if(item.includes(2)){
+//         return 'Z'
+//     }else if(item.includes(3)){
+//         return 'E'
+//     }else if(item.includes(4)){
+//         return 'h'
+//     }else if(item.includes(5)){
+//         return 'S'
+//     }else if(item.includes(6)){
+//         return 'G'
+//     }else if(item.includes(7)){
+//         return 'L'
+//     }else if(item.includes(8)){
+//         return 'B'
+//     }else if(item.includes(9)){
+//         return 'q'
+//     }else{
+//         return item
+//     }
+//    }).join('')
    
     // return n
+
+    return [...n].map(a => ({'0':'O','5':'S','1':'I', '2':'Z', '3':'E', '4':'h', '6':'G', '7':'L', '8':'B', '9':'q'})[a]||a).join('')
 }
+
 
 //if the value exists, exchange it with the correct value
 
