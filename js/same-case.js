@@ -24,14 +24,13 @@
 
 //create a function called specialXters
 function specialXters(a,b){
-    let char = 'a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z'
-    if(a.toLowerCase() === b.toLowerCase() && a.toUpperCase() === b.toUpperCase()){
-        return 1
-    }else if(!a.includes(char) && !b.includes(char) ){
-        return -1
-    }else{
-        return 0
-    }
+  if(a.toUpperCase() === a.toLowerCase() || b.toLowerCase() === b.toUpperCase()){
+    return -1
+  }else if(a === a.toLowerCase() && b === b.toLowerCase() || a === a.toUpperCase() && b === b.toUpperCase()){
+      return 1
+  }else{
+    return 0
+  }
 
 }
 
@@ -39,5 +38,5 @@ console.log(specialXters('a', 'g'), 1)
 console.log(specialXters('A', 'G'), 1)
 console.log(specialXters('a', 'G'), 0)
 console.log(specialXters('0', '?'), -1)
-//create a conditional to check if both cahracters are the same or different
-//return the output
+
+
