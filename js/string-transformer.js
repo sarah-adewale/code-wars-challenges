@@ -12,18 +12,15 @@
 
 //string
 //string
-function stringTransformer(str){
-    str = str.split(' ')
-    let reversedString = str.reverse()
-    let newStr = ''
-    reversedString.map((item) => {
-        if(item === item.toLowerCase()){
-            newStr += item.toUpperCase()
-        }
-    })
-    return newStr
-}
+// function stringTransformer(str){
+//     str = str.split(' ')
+//     let reversedString = str.reverse().join(' ')
+//     let newStr = reversedString.split('').map(item => item === item.toLowerCase() ? item.toUpperCase() : item.toLowerCase()).join('')
+//     return newStr
+// }
 
+//refractor
+const stringTransformer = str => str.split(' ').reverse().join(' ').split('').map(item => item === item.toLowerCase() ? item.toUpperCase() : item.toLowerCase()).join('')
 
 console.log(stringTransformer('Example Input'), 'iNPUT eXAMPLE')
 console.log(stringTransformer('SaraH ADewale'), 'adEWALE sARAh')
