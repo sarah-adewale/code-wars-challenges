@@ -7,3 +7,7 @@ var websites = []
 while(websites.length < 1000) websites.push('codewars')
 
 console.log(websites)
+
+//OR
+
+var websites = new Array(1000).fill("codewars");
