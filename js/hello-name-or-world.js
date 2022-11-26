@@ -20,5 +20,11 @@ function hello(name) {
    
 }
 
+//OR (using tenery)
+
+const hello = name => {
+    return name ? `Hello, ${name[0].toUpperCase()}${name.slice(1).toLowerCase()}!` : 'Hello, World!'
+}
+
 console.log(hello('AliCE'))
 console.log(hello(''))
