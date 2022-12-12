@@ -14,3 +14,11 @@ function move (position, roll) {
 }
 
 console.log(move(3, 6))
+
+
+// const charTest = char => {
+//     let alpha = 'abcdefghijklmnopqrstuvwxyz'
+//     return alpha.charAt(1)
+// }
+
+// console.log(charTest())
