@@ -13,9 +13,8 @@
 // it behaves as specified.
 
 function wrap(value) {
-  
-  {
-    return this.value === value  
+  return {
+     'value' : value 
   };
 }
 
