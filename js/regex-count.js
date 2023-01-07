@@ -16,8 +16,9 @@
 function lowercaseCount(str){
     //How many?
   let regex = /[a-z]/g 
-  let newStr = str.match(regex)
- return newStr.length
+//   let newStr = str.match(regex)
+//  return newStr.length
+return str.match(regex).length
 }
 
 console.log(lowercaseCount('abc'), 3)
