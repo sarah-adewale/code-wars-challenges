@@ -25,6 +25,15 @@ function twoSum(numbers, target) {
     }
   }
   return pairs
+
+//   for (let i = 0; i < numbers.length; i++) {
+//     let num = numbers[i];
+//     let diff = target - num;
+//     if (numbers.slice(i + 1).includes(diff)) {
+//       return [i, numbers.slice(i + 1).indexOf(diff) + i + 1];
+//     }
+//   }
+//   return null;
 }
 
 console.log(twoSum([1234,5678,9012], 14690))
