@@ -34,30 +34,26 @@
 // Follow-up: Can you come up with an algorithm that is less than O(n2) time 
 // complexity?
 
-// var twoSum = function(nums, target) {
-//     const pairs = []
-//     const num = {}
-//     for(let i = 0; i <= nums.length; i++){
-//         const diff = target - nums[i]
-//         if(num[diff] !== undefined){
-//             pairs.push(num[diff], i)
-//         }else{
-//             num[nums[i]] = i
-//         }
-//     }
+//array and an integer
+//array that contains the indices of the numbers that its sumation equals the target
+//[1,2,3], 4 ==> [0, 2] because 1 + 3 equals 4 and they are both in position 0 and 2
 
-//     return pairs
-// };
+//create a function with two parameters
+function twoSum(arr, target){
+    const pairs = [] // create an array bucket
+    const hash = {} //hashmaps is used to quickly look up values without having to go thru the whole list. 
+    for(let i = 0; i <= arr.length; i++){
+        const diff = target - arr[i]
+        if(hash[diff] !== undefined){
+            pairs.push(hash[diff], i)
+        }else{
+            hash[arr[i]] = i
+        }
 
-
-
-// console.log(twoSum([2,7,11,15], 9), [0, 1])
-
-let capitalCities = {
-  France: 'Paris',
-  Germany: 'Berlin',
-  Japan: 'Tokyo'
+    }
+    return pairs
 }
-console.log(capitalCities.France) // prints "Paris"
-console.log(capitalCities.Germany) // prints "Berlin"
-console.log(capitalCities.Japan) // prints "Tokyo"
+//loop thru the array
+//return the indices
+
+console.log(twoSum([1,2,3], 4), [0, 2])
