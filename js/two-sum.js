@@ -17,7 +17,7 @@ function twoSum(numbers, target) {
   const pairs = []
   const num = {}
   for(const num1 of numbers){
-    const num2 = target - num1
+    const num2 = target - num1 //target minus num1 would give you the reslut of num 2
     if(num[num2] ){
         pairs.push([numbers.indexOf(num2), numbers.indexOf(num1)])
     }else{
@@ -37,4 +37,4 @@ function twoSum(numbers, target) {
 }
 
 console.log(twoSum([1234,5678,9012], 14690))
-console.log(twoSum([1,2,3], 4))
+console.log(twoSum([2,7,11,15], 4))
